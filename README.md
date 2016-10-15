@@ -22,7 +22,7 @@ Docker image at [smartapps/bitbucket-pipelines-php-mysql](https://hub.docker.com
 ## Sample `bitbucket-pipelines.yml`
 
 ```YAML
-image: smartapps/bitbucket-pipelines-php-mysql
+image: lan143/bitbucket-pipelines-php-mysql
 pipelines:
   default:
     - step:
