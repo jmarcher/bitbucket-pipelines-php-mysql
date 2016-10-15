@@ -6,6 +6,9 @@ ENV LC_ALL en_US.UTF-8
 ENV LANGUAGE en_US:en
 
 RUN \
+ echo "deb http://packages.dotdeb.org jessie all\ndeb-src http://packages.dotdeb.org jessie all" &&\
+ wget https://www.dotdeb.org/dotdeb.gpg &&\
+ apt-key add dotdeb.gpg &&\
  apt-get update &&\
  apt-get -y --no-install-recommends install locales apt-utils &&\
  echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen &&\
@@ -13,13 +16,13 @@ RUN \
  /usr/sbin/update-locale LANG=en_US.UTF-8 &&\
  echo "mysql-server mysql-server/root_password password root" | debconf-set-selections &&\
  echo "mysql-server mysql-server/root_password_again password root" | debconf-set-selections &&\
- apt-get -y --no-install-recommends install ca-certificates git php5-mysqlnd php5-cli php5-sqlite php5-mcrypt php5-curl php5-intl php-gettext php5-gd php5-imagick php5-xdebug imagemagick openssh-client wget curl software-properties-common gettext zip mysql-server mysql-client apt-transport-https ruby python python3 perl &&\
+ apt-get -y --no-install-recommends install ca-certificates git php7.0-mysqlnd php7.0-cli php7.0-sqlite php7.0-mcrypt php7.0-curl php7.0-intl php7.0-gettext php7.0-gd php7.0-imagick php7.0-xdebug imagemagick openssh-client wget curl software-properties-common gettext zip mysql-server mysql-client apt-transport-https ruby python python3 perl &&\
  curl -sL https://deb.nodesource.com/setup_4.x | bash - &&\
  apt-get -y --no-install-recommends install nodejs &&\
  apt-get autoclean && apt-get clean && apt-get autoremove
 
 RUN \
- sed -ri -e "s/^variables_order.*/variables_order = \"EGPCS\"/g" /etc/php5/cli/php.ini
+ sed -ri -e "s/^variables_order.*/variables_order = \"EGPCS\"/g" /etc/php/7.0/cli/php.ini
 
 RUN \
  curl -sS https://getcomposer.org/installer | php -- --filename=composer --install-dir=/usr/bin &&\

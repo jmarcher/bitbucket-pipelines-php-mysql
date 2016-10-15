@@ -10,11 +10,11 @@ Docker image at [lan143/bitbucket-pipelines-php-mysql](https://hub.docker.com/r/
 
 ## Packages installed
 
- - `php5-cli`, `php5-sqlite`, `php5-mysqlnd`, `php5-mcrypt`, `php5-curl`, `php-gettext`, `php5-gd`, `php5-json`, `php5-intl`, `php5-xdebug`, `php5-imagick`, `imagemagick`, `openssh-client`, `curl`, `gettext`, `zip`, `mysql-server`, `mysql-client`, `git`
+ - `php7.0-cli`, `php7.0-sqlite`, `php7.0-mysqlnd`, `php7.0-mcrypt`, `php7.0-curl`, `php7.0-gettext`, `php7.0-gd`, `php7.0-json`, `php7.0-intl`, `php7.0-xdebug`, `php7.0-imagick`, `imagemagick`, `openssh-client`, `curl`, `gettext`, `zip`, `mysql-server`, `mysql-client`, `git`
  - [Perl](https://www.perl.org/) 5.20.2
  - [Python](https://www.python.org/) 2.7 + 3.4
  - [MySQL](https://www.mysql.com/) 5.5.50 (user `root:root`)
- - [PHP](http://www.php.net/) 5.6.24
+ - [PHP](http://www.php.net/) 7.0.9
  - [Ruby](https://www.ruby-lang.org/) 2.1.5
  - [Node.js](https://nodejs.org/) 4.x LTS
  - Latest [Composer](https://getcomposer.org/), [Gulp](http://gulpjs.com/), [Webpack](https://webpack.github.io/), [Mocha](https://mochajs.org/), [Grunt](http://gruntjs.com/), [Codeception](http://codeception.com/)
