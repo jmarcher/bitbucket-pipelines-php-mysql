@@ -23,5 +23,7 @@ RUN \
 
 RUN \
  curl -sS https://getcomposer.org/installer | php -- --filename=composer --install-dir=/usr/bin &&\
+ curl -LsS http://codeception.com/codecept.phar -o /usr/local/bin/codecept &&\
+ chmod a+x /usr/local/bin/codecept &&\
  npm install --no-color --production --global gulp-cli webpack mocha grunt &&\
  rm -rf /root/.npm /root/.composer /tmp/* /var/lib/apt/lists/*
