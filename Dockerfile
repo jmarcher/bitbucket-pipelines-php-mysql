@@ -8,7 +8,9 @@ ENV LANGUAGE en_US:en
 RUN \
  echo "deb http://packages.dotdeb.org jessie all" >> /etc/apt/sources.list.d/dotdeb.list &&\
  wget https://www.dotdeb.org/dotdeb.gpg &&\
- apt-key add dotdeb.gpg &&\
+ apt-key add dotdeb.gpg
+ 
+RUN \
  apt-get update &&\
  apt-get -y --no-install-recommends install locales apt-utils &&\
  echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen &&\
