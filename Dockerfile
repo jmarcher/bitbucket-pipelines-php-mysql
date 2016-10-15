@@ -6,7 +6,7 @@ ENV LC_ALL en_US.UTF-8
 ENV LANGUAGE en_US:en
 
 RUN \
- echo "deb http://packages.dotdeb.org jessie all\ndeb-src http://packages.dotdeb.org jessie all" >> /etc/apt/sources.list.d/dotdeb.list &&\
+ echo "deb http://packages.dotdeb.org jessie all" >> /etc/apt/sources.list.d/dotdeb.list &&\
  wget https://www.dotdeb.org/dotdeb.gpg &&\
  apt-key add dotdeb.gpg &&\
  apt-get update &&\
