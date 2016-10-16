@@ -10,7 +10,7 @@ Docker image at [lan143/bitbucket-pipelines-php-mysql](https://hub.docker.com/r/
 
 ## Packages installed
 
- - `php7.0-cli`, `php7.0-sqlite`, `php7.0-mysqlnd`, `php7.0-mcrypt`, `php7.0-curl`, `php7.0-gettext`, `php7.0-gd`, `php7.0-json`, `php7.0-intl`, `php7.0-xdebug`, `php7.0-imagick`, `imagemagick`, `openssh-client`, `curl`, `gettext`, `zip`, `mysql-server`, `mysql-client`, `git`
+ - `php7.0-cli`, `php7.0-sqlite`, `php7.0-mysqlnd`, `php7.0-mcrypt`, `php7.0-mbstring`, `php7.0-zip`, `php7.0-curl`, `php7.0-gettext`, `php7.0-gd`, `php7.0-json`, `php7.0-intl`, `php7.0-xdebug`, `php7.0-imagick`, `imagemagick`, `openssh-client`, `curl`, `gettext`, `zip`, `mysql-server`, `mysql-client`, `git`
  - [Perl](https://www.perl.org/) 5.20.2
  - [Python](https://www.python.org/) 2.7 + 3.4
  - [MySQL](https://www.mysql.com/) 5.5.50 (user `root:root`)
